@@ -7,10 +7,10 @@ pipeline {
     }
 
     stages {
-         stage('Insanity Tests') {
+         stage('Tests') {
              steps {
-                 echo "Starting Insanity Tests .."
-                 sh 'mvn clean'
+                 echo "Starting Tests .."
+                 sh 'mvn test'
              }
           }    
     }
