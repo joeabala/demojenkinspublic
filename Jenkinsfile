@@ -13,7 +13,7 @@ pipeline {
          stage('Build') {
              steps {
                  echo "Starting Build .."
-                 //sh 'mvn package'
+                 sh 'mvn package'
                  sh 'docker ps'
              }
           }  
