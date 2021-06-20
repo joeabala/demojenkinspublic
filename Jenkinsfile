@@ -11,6 +11,7 @@ pipeline {
              steps {
                  echo "Starting Build .."
                  sh 'mvn package'
+                 sh 'docker ps'
              }
           }  
     }
