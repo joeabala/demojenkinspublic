@@ -7,11 +7,18 @@ pipeline {
     }
 
     stages {
-         stage('Tests') {
+         stage('Build') {
+             steps {
+                 echo "Starting Build .."
+                 sh 'mvn build'
+             }
+          }  
+        
+        stage('Tests') {
              steps {
                  echo "Starting Tests .."
                  sh 'mvn test'
              }
-          }    
+          }  
     }
 }
