@@ -4,6 +4,7 @@ pipeline {
         
         POSTGRESS_USER = 'postgres'
         POSTGRESS_PASS = 'root'
+        POSTGRESS_HOST = 'localhost'
         //PATH = "/Users/abala/apache-maven-3.6.3/bin:/usr/local/bin:$PATH"
     }
 
