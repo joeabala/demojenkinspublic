@@ -1,8 +1,9 @@
 pipeline {
     agent any
     environment {
-        POSTGRESS_USER = 'postgres'
-        POSTGRESS_PASS = 'root'
+        
+        POSTGRES_USER = 'postgres'
+        POSTGRES_PASS = 'root'
         //PATH = "/Users/abala/apache-maven-3.6.3/bin:/usr/local/bin:$PATH"
     }
 
